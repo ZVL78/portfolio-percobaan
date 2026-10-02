@@ -1,0 +1,149 @@
+:root {
+    --colorA: #00ccff;
+    --colorB: #d400ff;
+    --primary_color: #89b4fa;
+    --animation1: rgba(137, 180, 250, 0.4);
+    --animation2: rgba(137, 180, 250, 0.8);
+    --btn-color-hover: #b4befe;
+    --back-color: black;
+    --div-primary: #1a1919;
+    --txt-area-back: #3d3d3d;
+    --txt-area-bord: #444;
+    --txt-primary: white;
+}
+
+img {
+    border-radius: 50%;
+    border: 3px solid var(--primary_color);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.companion {
+    border-radius: 50%;
+    border: 3px solid var(--primary_color);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.some:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+    scale: 200%;
+}
+
+.some {
+    border-radius: 10%;
+    border: 3px solid var(--primary_color);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+body {
+    background-color: var(--back-color);
+    color: var(--txt-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 0;
+}
+
+.strong_blue {
+    color: var(--colorA);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.open,
+.self {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--div-primary);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 20px;
+}
+
+.card {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--div-primary);
+    border-radius: 10px;
+    padding: 20px;
+    flex-grow: 1;
+    width: 30%;
+    box-shadow: var(--div-primary) 5px 5px 10px;
+}
+
+.card a:hover {
+    color: var(--primary_color);
+    font-size: 20px;
+    font-style: normal;
+}
+
+.card a {
+    margin-bottom: -7px;
+    padding-top: 10px;
+    color: var(--txt-primary);
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.card p strong {
+    font-size: 15px;
+}
+
+.card p {
+    margin-bottom: -3px;
+    font-size: 13px;
+}
+
+.card h1 {
+    margin-bottom: -3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+@media (max-width: 888px) {
+    .sec {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
